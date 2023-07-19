@@ -17,7 +17,7 @@
 			<th>Tổng tiền</th>
 			<th>Trạng thái</th>
 			<th></th> 
-			hey cua t do ae   
+			hey cua t do ae ee
 		</tr>
 		<c:forEach var="o" items="${orders }">
 			<tr>
