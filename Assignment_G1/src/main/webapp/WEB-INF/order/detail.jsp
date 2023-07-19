@@ -9,6 +9,7 @@
 <title>Chi tiết đơn hàng</title>
 </head>
 <body>
+test 33
 	<h2>Thông tin đơn hàng</h2>
 	<table>
 		<tr>
