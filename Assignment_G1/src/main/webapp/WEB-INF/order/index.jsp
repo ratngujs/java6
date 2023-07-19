@@ -18,7 +18,7 @@
 			<th>Trạng thái</th>
 <<<<<<< HEAD
 			<th></th> 
-			test 2
+			
 =======
 			<th> </th>
 >>>>>>> branch 'main' of https://github.com/ratngujs/java6.git
