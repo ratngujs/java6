@@ -12,7 +12,7 @@
 	<h3 class='text-center'>DANH SÁCH ĐƠN HÀNG</h3>
 	<table class="table table-striped">
 		<tr>
-			<th>Mã hóa đơn</th>
+			<th>Mã hd</th>
 			<th>Ngày tạo</th>
 			<th>Tổng tiền</th>
 			<th>Trạng thái</th>
