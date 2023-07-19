@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <%@taglib uri="http://java.sun.com/jstl/core_rt" prefix="c"%>
 <%@taglib uri="http://java.sun.com/jstl/fmt_rt" prefix="fmt"%>
 <!DOCTYPE html>
@@ -16,23 +16,21 @@
 			<th>Ngày tạo</th>
 			<th>Tổng tiền</th>
 			<th>Trạng thái</th>
-<<<<<<< HEAD
-			<th></th> 
-			
-=======
-			<th> </th>
->>>>>>> branch 'main' of https://github.com/ratngujs/java6.git
+			<th></th>
+
 		</tr>
 		<c:forEach var="o" items="${orders }">
 			<tr>
 				<td>${o.id }</td>
-				<td><fmt:formatDate value="${o.createDate }" pattern="dd/MM/yyyy"/> </td>
-				<td><fmt:formatNumber value="${o.total }"/> </td>
+				<td><fmt:formatDate value="${o.createDate }"
+						pattern="dd/MM/yyyy" /></td>
+				<td><fmt:formatNumber value="${o.total }" /></td>
 				<td>${o.status ? "Đã xử lý":"Chờ xử lý" }</td>
-				<td><a style="text-decoration: none" href="/order/detail?id=${o.id}"><i class="icon-eye-open"></i></a></td>
+				<td><a style="text-decoration: none"
+					href="/order/detail?id=${o.id}"><i class="icon-eye-open"></i></a></td>
 			</tr>
 		</c:forEach>
 	</table>
-	
+
 </body>
 </html>
