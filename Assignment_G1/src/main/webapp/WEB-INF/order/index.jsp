@@ -16,8 +16,12 @@
 			<th>Ngày tạo</th>
 			<th>Tổng tiền</th>
 			<th>Trạng thái</th>
+<<<<<<< HEAD
 			<th></th> 
-			hey cua t do ae ee
+			test
+=======
+			<th> </th>
+>>>>>>> branch 'main' of https://github.com/ratngujs/java6.git
 		</tr>
 		<c:forEach var="o" items="${orders }">
 			<tr>
