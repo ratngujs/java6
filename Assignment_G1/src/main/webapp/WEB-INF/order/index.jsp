@@ -12,11 +12,11 @@
 	<h3 class='text-center'>DANH SÁCH ĐƠN HÀNG</h3>
 	<table class="table table-striped">
 		<tr>
-			<th>Mã hd</th>
+			<th>Mã hóa đơn</th>
 			<th>Ngày tạo</th>
 			<th>Tổng tiền</th>
 			<th>Trạng thái</th>
-
+			<th> </th>
 		</tr>
 		<c:forEach var="o" items="${orders }">
 			<tr>
