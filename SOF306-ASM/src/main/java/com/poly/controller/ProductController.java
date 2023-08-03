@@ -19,5 +19,6 @@ public class ProductController {
 		Product item = productService.findById(id);
 		model.addAttribute("item", item);
 		return "product/detail";
+//		ssss
 	}
 }
