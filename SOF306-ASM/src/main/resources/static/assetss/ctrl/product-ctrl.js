@@ -56,6 +56,7 @@ app.controller("product-ctrl", function ($scope, $http) {
             $scope.items.push(resp.data);
             $scope.reset();
             sweetalert("Thêm mới thành công!");
+            location.reload();
         }).catch(error => {
             sweetalert("Lỗi thêm mới sản phẩm!");
             console.log("Error", error);
@@ -70,6 +71,7 @@ app.controller("product-ctrl", function ($scope, $http) {
             $scope.items[index] = item;
             $scope.reset();
             sweetalert("Cập nhật sản phẩm thành công!");
+            location.reload();
         }).catch(error => {
             sweetalert("Lỗi cập nhật sản phẩm!");
             console.log("Error", error);
@@ -83,6 +85,7 @@ app.controller("product-ctrl", function ($scope, $http) {
             $scope.items.splice(index, 1);
             $scope.reset();
             sweetalert("Xóa sản phẩm thành công!");
+            location.reload();
         }).catch(error => {
             sweetalert("Lỗi xóa sản phẩm!");
             console.log("Error", error);
@@ -98,6 +101,7 @@ app.controller("product-ctrl", function ($scope, $http) {
             headers: { 'Content-Type': undefined }
         }).then(resp => {
             $scope.form.image = resp.data.name;
+            
         }).catch(error => {
             sweetalert("Lỗi tải lên hình ảnh!");
             console.log("Error", error);
