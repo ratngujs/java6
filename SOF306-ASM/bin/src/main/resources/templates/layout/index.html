@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:fragment="dynamic(main)">
+<head>
+<base href="/">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="assets/img/louvre.png" type="image/x-icon" />
+<title>Homepage - Louvre</title>
+
+<link th:href="@{assets/css/style2.css}" rel="stylesheet" />
+<link th:href="@{assets/lib/flaticon/font/flaticon.css}" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+<link th:href="@{assets/lib/owlcarousel/assets/owl.carousel.min.css}" rel="stylesheet">
+<link th:href="@{assets/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css}" rel="stylesheet" />
+</head>
+<body ng-app="shopping-app" ng-controller="shopping-ctrl">
+	<div class="wrapper">
+		<div class="preloader-wrap">
+			<div class="preloader">
+				<span class="dot"></span>
+				<div class="dots">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</div>
+		<main class="main-content">
+			<div th:replace="/layout/_menu2.html"></div>
+			<div th:replace="/layout/_menu.html"></div>
+			<div th:replace="${main}"></div>
+		</main>
+	</div>
+
+	<!-- <footer class="footer-area">
+		<div class="footer-top-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 col-lg-3">
+						<div class="widget-item">
+							<div class="about-widget">
+								<div class="footer-logo-area">
+									<a href="index.html">
+										<img class="logo-main" src="assets/img/logo.png" alt="Logo" />
+									</a>
+								</div>
+								<ul>
+									<li>
+										<i class="zmdi zmdi-pin"></i> Innovation Building, Quang Trung, District 12, Ho Chi Minh City
+									</li>
+									<li>
+										<i class="zmdi zmdi-email"></i>
+										<a href="mailto://duynhps18293@fpt.edu.vn">duynhps18293@fpt.edu.vn</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-lg-3">
+						<div class="widget-item widget-item-one">
+							<h4 class="widget-title">INFORMATION</h4>
+							<div class="widget-menu-wrap">
+								<ul class="nav-menu">
+									<li>
+										<a href="javascript:(0);">New products</a>
+									</li>
+									<li>
+										<a href="javascript:(0);">Top sellers</a>
+									</li>
+									<li>
+										<a href="javascript:(0);">Our stores</a>
+									</li>
+									<li>
+										<a href="javascript:(0);">Account</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-lg-3">
+						<div class="widget-item widget-item-two">
+							<h4 class="widget-title">QUICK LINKS</h4>
+							<div class="widget-menu-wrap">
+								<ul class="nav-menu">
+									<li>
+										<a href="javascript:(0);">Contact us</a>
+									</li>
+									<li>
+										<a href="javascript:(0);">Help Center</a>
+									</li>
+									<li>
+										<a href="javascript:(0);">Refund Policy</a>
+									</li>
+									<li>
+										<a href="javascript:(0);">Report Spam</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-lg-3">
+						<div class="widget-item">
+							<h4 class="widget-title">newsletter</h4>
+							<div class="widget-newsletter">
+								<div class="newsletter-form">
+									<form>
+										<input type="email" class="form-control" placeholder="email@example.com">
+										<button class="btn-submit" type="button">Subscribe</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<p class="copyright">
+							© 2022, Julie. Made with <i class="fa fa-heart icon-heart"></i> by
+							<a href="javascript:(0);"> DuyPlus</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div id="scroll-to-top" class="scroll-to-top">
+		<span class="fa fa-angle-double-up"></span>
+	</div>
+
+	<aside class="off-canvas-wrapper">
+		<div class="off-canvas-inner">
+			<div class="off-canvas-overlay"></div>
+			<div class="off-canvas-content">
+				<div class="off-canvas-header">
+					<div class="close-action">
+						<button class="btn-menu-close">
+							menu <i class="fa fa-chevron-left"></i>
+						</button>
+					</div>
+				</div>
+
+				<div class="off-canvas-item">
+					<div class="res-mobile-menu menu-active-one"></div>
+				</div>
+			</div>
+		</div>
+	</aside> -->
+<!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="row pt-5">
+            <div class="col-lg-4 col-md-12 mb-5">
+                <h1 class="mb-3 display-5 text-capitalize text-white"><span class="text-primary">Louvre</span>PetShop</h1>
+                <p class="m-0">Thương hiệu LouvrePetshop thuộc sở hữu của Công ty Cổ phần Louvre Việt Nam. Chúng tôi cũng là thành viên của Hiệp hội những nhà nhân giống chó tại Việt Nam (VKA) từ năm 2018. Là một trong những đơn vị đầu tiên nhập khẩu chó mèo cảnh tại Việt Nam. Sau nhiều năm, Louvre đã mang đến cho cộng đồng yêu cún cưng nhiều thế hệ thú cưng thuần chủng, chất lượng.</p>
+            </div>
+            <div class="col-lg-8 col-md-12">
+                <div class="row">
+                    <div class="col-md-4 mb-5">
+                        <h5 class="text-primary mb-4">Get In Touch</h5>
+                        <p><i class="fa fa-map-marker-alt mr-2"></i>Ninh kiều , Cần Thơ, Việt Nam</p>
+                        <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
+                        <p><i class="fa fa-envelope mr-2"></i>louvre@fpt.edu.vn</p>
+                        <div class="d-flex justify-content-start mt-4">
+                            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <h5 class="text-primary mb-4">Popular Links</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Trang chủ</a>
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Về chúng tôi</a>
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Dịch vụ</a>
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Thành viên</a>
+                            <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Liên hệ</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <h5 class="text-primary mb-4">Tin mới</h5>
+                        <form action="">
+                            <div class="form-group">
+                                <input type="text" class="form-control border-0" placeholder="Nhập tên" required="required" />
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control border-0" placeholder="Nhập Email" required="required" />
+                            </div>
+                            <div>
+                                <button class="btn btn-lg btn-primary btn-block border-0" type="submit">Gửi ngay</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-white py-4 px-sm-3 px-md-5" style="background: #111111;">
+        <div class="row">
+            <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+                <p class="m-0 text-white">
+                    &copy; <a class="text-white font-weight-bold" href="">Louvre</a>. All Rights Reserved. Designed by
+                    <a class="text-white font-weight-bold" href="">G1 - </a>
+                </p>
+            </div>
+            <div class="col-md-6 text-center text-md-right">
+                <ul class="nav d-inline-flex">
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">Privacy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">Terms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">Help</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+    <script src="assets/lib/easing/easing.min.js"></script>
+    <script src="assets/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="assets/lib/tempusdominus/js/moment.min.js"></script>
+    <script src="assets/lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="assets/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    
+	<script src="assets/js/jquery-3.6.0.min.js"></script>
+	<script src="assets/js/modernizr.min.js"></script>
+	<script src="assets/js/jquery-migrate.js"></script>
+	<script src="assets/js/jquery.slicknav.min.js"></script>
+    <script src="assets/js/sweetalert2.all.min.js"></script>
+	<script src="assets/js/jquery-zoom.min.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/headroom.min.js"></script>
+	<script src="assets/js/swiper.min.js"></script>
+	<script src="assets/js/fancybox.min.js"></script>
+	<script src="assets/js/custom.js"></script>
+	<script src="assets/js/angular.min.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+</html>
