@@ -56,7 +56,7 @@ public class MailerServiceImpl implements MailerService {
 	public void sendEmail(String email, String link) throws MessagingException, UnsupportedEncodingException {
 		MimeMessage message = sender.createMimeMessage();
 		MimeMessageHelper helper = new MimeMessageHelper(message, true, "utf-8");
-		helper.setFrom("duynhps18293@fpt.edu.vn", "Julie Store");
+		helper.setFrom("canhvvpc04189@fpt.edu.vn", "Louvre");
 		helper.setTo(email);
 		String button = "background-color:#783ecf;color:#fff;padding:12px 10px;text-decoration:none;border-radius:3px";
 		String subject = "Request to reset your password";
