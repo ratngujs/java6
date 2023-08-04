@@ -69,7 +69,7 @@ public class MailerServiceImpl implements MailerService {
 				+ "<p style='margin-bottom:2em'>Your mail: <a href=\"" + "mailto:" + email
 				+ "\" style='color:#b745dd;text-decoration:none'>" + email + "</a></p>"
 				+ "<p>If this was a mistake, just ignore this email and nothing will happen.</p>" + "</div>"
-				+ "<div style='font-size:14px;padding:2em'>Copyright © 2022 <b>Julie</b>. All Rights Reserved.</div>"
+				+ "<div style='font-size:14px;padding:2em'>© Louvre. All Rights Reserved. Designed by G1 -.</div>"
 				+ "</div>";
 		helper.setSubject(subject);
 		helper.setText(content, true);
